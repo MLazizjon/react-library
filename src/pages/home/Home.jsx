@@ -1,11 +1,14 @@
 import React from 'react'
 import "./home.css"
-const Home = () => {
+const Home = ({child}) => {
   return (
     <div>
-      <p>salom
-        
-      </p>
+      
+      {child.map((item, index)=>(
+        <p>
+          {item.id}
+        </p>
+      ))}
     </div>
   )
 }
